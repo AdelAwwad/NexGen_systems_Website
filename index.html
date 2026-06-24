@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Systems | Transforming Ideas into Scalable Digital Solutions</title>
+    <meta name="description"
+        content="NexGen Systems – Transforming ideas into scalable digital solutions. Specializing in Custom Software, CONSTRUCT ERP PRO & Smart UI/UX. High-performance mobile apps & web platforms.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="NexGen_logo_without_BG.png" alt="NexGen Systems Logo" class="logo-img">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="#services" class="nav-link" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+                <a href="#products" class="nav-link" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a>
+                <a href="#projects" class="nav-link" data-ar="مشاريعنا" data-en="Projects">مشاريعنا</a>
+                <a href="#clients" class="nav-link" data-ar="عملاؤنا" data-en="Clients">عملاؤنا</a>
+                <a href="#contact" class="nav-link" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+            </div>
+            <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
+            <button class="mobile-menu" id="mobileMenu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span data-ar="تحويل الأفكار إلى حلول رقمية قابلة للتوسع" data-en="Transforming Ideas into Scalable Digital Solutions">تحويل الأفكار إلى حلول رقمية قابلة للتوسع</span>
+                </div>
+                <h1 class="hero-title">
+                    <span data-ar="نحوّل أفكارك إلى" data-en="Transforming Ideas into">نحوّل أفكارك إلى</span>
+                    <br>
+                    <span class="gradient-text" data-ar="حلول رقمية قابلة للتوسع" data-en="Scalable Digital Solutions">حلول رقمية قابلة للتوسع</span>
+                </h1>
+                <p class="hero-description"
+                    data-ar="متخصصون في البرمجيات المخصصة، نظام CONSTRUCT ERP PRO، وواجهات UI/UX الذكية. نصنع تطبيقات موبايل وأنظمة ويب عالية الأداء تُناسب كل قطاع."
+                    data-en="Specializing in Custom Software, CONSTRUCT ERP PRO &amp; Smart UI/UX. Crafting high-performance mobile apps &amp; web platforms tailored for every sector.">
+                    متخصصون في البرمجيات المخصصة، نظام CONSTRUCT ERP PRO، وواجهات UI/UX الذكية. نصنع تطبيقات موبايل وأنظمة ويب عالية الأداء تُناسب كل قطاع.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" id="hero-cta-btn">
+                        <span data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a href="#products" class="btn btn-outline" id="hero-explore-btn">
+                        <span data-ar="استكشف منتجاتنا" data-en="Our Products">استكشف منتجاتنا</span>
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="6">0</div>
+                        <div class="stat-label" data-ar="أنظمة متخصصة" data-en="Specialized Systems">أنظمة متخصصة</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label" data-ar="عميل سعيد" data-en="Happy Clients">عميل سعيد</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label" data-ar="دعم فني" data-en="Technical Support">دعم فني</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-logo-wrapper">
+                    <img src="NexGen_logo_without_BG.png" alt="NexGen Systems" class="hero-logo-big">
+                    <div class="hero-glow"></div>
+                    <!-- Floating badges -->
+                    <div class="floating-badge badge-flutter">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="floating-badge badge-erp">
+                        <i class="fas fa-cogs"></i>
+                        <span>ERP</span>
+                    </div>
+                    <div class="floating-badge badge-uiux">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="floating-badge badge-crm">
+                        <i class="fas fa-users"></i>
+                        <span>CRM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-ar="ما نقدمه" data-en="What We Offer">ما نقدمه</span>
+                <h2 class="section-title" data-ar="خدماتنا الاحترافية" data-en="Our Professional Services">خدماتنا الاحترافية</h2>
+                <p class="section-subtitle"
+                    data-ar="نقدم حلولاً تقنية متكاملة تلبي احتياجات عملك من التطوير إلى التصميم"
+                    data-en="We provide integrated tech solutions meeting your business needs from development to design">
+                    نقدم حلولاً تقنية متكاملة تلبي احتياجات عملك من التطوير إلى التصميم
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" id="svc-mobile">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-ar="تطوير تطبيقات الموبايل" data-en="Mobile App Development">تطوير تطبيقات الموبايل</h3>
+                    <p data-ar="بناء تطبيقات موبايل احترافية بتقنية Flutter تعمل على Android وiOS بأداء عالٍ وتجربة مستخدم استثنائية"
+                        data-en="Build professional mobile apps with Flutter technology for Android & iOS with high performance and exceptional UX">
+                        بناء تطبيقات موبايل احترافية بتقنية Flutter تعمل على Android وiOS بأداء عالٍ وتجربة مستخدم استثنائية
+                    </p>
+                    <div class="service-tags">
+                        <span>Flutter</span>
+                        <span>Android</span>
+                        <span>iOS</span>
+                    </div>
+                </div>
+                <div class="service-card" id="svc-erp">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3 data-ar="أنظمة ERP المتكاملة" data-en="Integrated ERP Systems">أنظمة ERP المتكاملة</h3>
+                    <p data-ar="تطوير أنظمة تخطيط موارد المؤسسات المخصصة لإدارة جميع جوانب عملك من المخزون والمالية والموارد البشرية"
+                        data-en="Custom ERP systems to manage all aspects of your business including inventory, finance, and HR">
+                        تطوير أنظمة تخطيط موارد المؤسسات المخصصة لإدارة جميع جوانب عملك من المخزون والمالية والموارد البشرية
+                    </p>
+                    <div class="service-tags">
+                        <span>ERP</span>
+                        <span>MRP</span>
+                        <span>WMS</span>
+                    </div>
+                </div>
+                <div class="service-card" id="svc-crm">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 data-ar="أنظمة CRM" data-en="CRM Systems">أنظمة CRM</h3>
+                    <p data-ar="بناء أنظمة إدارة علاقات العملاء المخصصة لتتبع العملاء، إدارة المبيعات، وتحليل بيانات الأعمال"
+                        data-en="Custom CRM systems to track clients, manage sales, and analyze business data">
+                        بناء أنظمة إدارة علاقات العملاء المخصصة لتتبع العملاء، إدارة المبيعات، وتحليل بيانات الأعمال
+                    </p>
+                    <div class="service-tags">
+                        <span>CRM</span>
+                        <span>Sales</span>
+                        <span>Analytics</span>
+                    </div>
+                </div>
+                <div class="service-card" id="svc-uiux">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 data-ar="تصميم UI/UX" data-en="UI/UX Design">تصميم UI/UX</h3>
+                    <p data-ar="تصميم واجهات مستخدم عصرية وجذابة مع تجربة مستخدم سلسة للتطبيقات والأنظمة والمواقع الإلكترونية"
+                        data-en="Modern and attractive UI design with smooth UX for apps, systems, and websites">
+                        تصميم واجهات مستخدم عصرية وجذابة مع تجربة مستخدم سلسة للتطبيقات والأنظمة والمواقع الإلكترونية
+                    </p>
+                    <div class="service-tags">
+                        <span>Figma</span>
+                        <span>Design Systems</span>
+                        <span>UX Research</span>
+                    </div>
+                </div>
+                <div class="service-card" id="svc-desktop">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 data-ar="تطبيقات سطح المكتب" data-en="Desktop Applications">تطبيقات سطح المكتب</h3>
+                    <p data-ar="تطوير تطبيقات Windows احترافية بأداء أصلي عالٍ مع قواعد بيانات محلية وتقارير PDF متكاملة"
+                        data-en="Professional Windows applications with native performance, local databases, and integrated PDF reports">
+                        تطوير تطبيقات Windows احترافية بأداء أصلي عالٍ مع قواعد بيانات محلية وتقارير PDF متكاملة
+                    </p>
+                    <div class="service-tags">
+                        <span>Windows</span>
+                        <span>SQLite</span>
+                        <span>PDF Reports</span>
+                    </div>
+                </div>
+                <div class="service-card" id="svc-video">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 data-ar="المونتاج والتصميم الإبداعي" data-en="Video Editing & Creative Design">المونتاج والتصميم الإبداعي</h3>
+                    <p data-ar="خدمات مونتاج الفيديو والتصميم الجرافيكي للمحتوى التسويقي والعروض التقديمية الاحترافية"
+                        data-en="Video editing and graphic design services for marketing content and professional presentations">
+                        خدمات مونتاج الفيديو والتصميم الجرافيكي للمحتوى التسويقي والعروض التقديمية الاحترافية
+                    </p>
+                    <div class="service-tags">
+                        <span>Video</span>
+                        <span>Graphics</span>
+                        <span>Motion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-ar="منتجاتنا الجاهزة" data-en="Our Ready Products">منتجاتنا الجاهزة</span>
+                <h2 class="section-title" data-ar="أنظمة متخصصة لكل قطاع" data-en="Specialized Systems for Every Sector">أنظمة متخصصة لكل قطاع</h2>
+                <p class="section-subtitle"
+                    data-ar="أنظمة إدارة جاهزة ومجربة مصممة خصيصاً لتلبية احتياجات قطاعات مختلفة"
+                    data-en="Ready and tested management systems specifically designed to meet the needs of different sectors">
+                    أنظمة إدارة جاهزة ومجربة مصممة خصيصاً لتلبية احتياجات قطاعات مختلفة
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="product-filters" id="product-filters">
+                <button class="filter-btn active" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+                <button class="filter-btn" data-filter="pos" data-ar="نقاط البيع" data-en="POS">نقاط البيع</button>
+                <button class="filter-btn" data-filter="medical" data-ar="طبي" data-en="Medical">طبي</button>
+                <button class="filter-btn" data-filter="logistics" data-ar="لوجستيك" data-en="Logistics">لوجستيك</button>
+                <button class="filter-btn" data-filter="fnb" data-ar="مطاعم" data-en="F&B">مطاعم</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- El-Fawz System -->
+                <div class="product-card" data-category="pos" id="prod-elfawz">
+                    <div class="product-header">
+                        <div class="product-icon-wrap bg-green">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="product-badges">
+                            <span class="prod-badge badge-pos">POS</span>
+                        </div>
+                    </div>
+                    <h3 data-ar="سيستم الفوز" data-en="El-Fawz System">سيستم الفوز</h3>
+                    <p data-ar="إدارة محلات ومستودعات المواد الغذائية"
+                        data-en="Food stores & warehouse management">إدارة محلات ومستودعات المواد الغذائية</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i><span data-ar="إدارة المبيعات والمشتريات" data-en="Sales & purchases management">إدارة المبيعات والمشتريات</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="إدارة المخزون الدقيقة" data-en="Accurate inventory management">إدارة المخزون الدقيقة</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="حسابات العملاء والموردين" data-en="Client & supplier accounts">حسابات العملاء والموردين</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="تقارير الأرباح والخسائر" data-en="Profit & loss reports">تقارير الأرباح والخسائر</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="دعم الباركود" data-en="Barcode support">دعم الباركود</span></li>
+                    </ul>
+                    <a href="#contact" class="product-cta" id="prod-elfawz-cta">
+                        <span data-ar="اطلب عرضاً" data-en="Request Demo">اطلب عرضاً</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <!-- Smart Clinic System -->
+                <div class="product-card" data-category="medical" id="prod-clinic">
+                    <div class="product-header">
+                        <div class="product-icon-wrap bg-blue">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <div class="product-badges">
+                            <span class="prod-badge badge-medical">طبي</span>
+                        </div>
+                    </div>
+                    <h3 data-ar="سيستم العيادة الذكية" data-en="Smart Clinic System">سيستم العيادة الذكية</h3>
+                    <p data-ar="إدارة العيادات والمراكز الطبية"
+                        data-en="Clinic & medical center management">إدارة العيادات والمراكز الطبية</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i><span data-ar="سجل المرضى والتاريخ الطبي" data-en="Patient records & medical history">سجل المرضى والتاريخ الطبي</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="نظام الحجز والمواعيد" data-en="Booking & appointment system">نظام الحجز والمواعيد</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="إدارة المدفوعات والمصروفات" data-en="Payments & expenses management">إدارة المدفوعات والمصروفات</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="طباعة الروشتات والتقارير" data-en="Prescription & report printing">طباعة الروشتات والتقارير</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="لوحة تحكم ذكية للطبيب" data-en="Smart doctor dashboard">لوحة تحكم ذكية للطبيب</span></li>
+                    </ul>
+                    <a href="#contact" class="product-cta" id="prod-clinic-cta">
+                        <span data-ar="اطلب عرضاً" data-en="Request Demo">اطلب عرضاً</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <!-- POS & Cashier System -->
+                <div class="product-card" data-category="pos" id="prod-pos">
+                    <div class="product-header">
+                        <div class="product-icon-wrap bg-orange">
+                            <i class="fas fa-cash-register"></i>
+                        </div>
+                        <div class="product-badges">
+                            <span class="prod-badge badge-pos">POS</span>
+                        </div>
+                    </div>
+                    <h3 data-ar="سيستم إدارة المبيعات والكاشير" data-en="Sales & Cashier System (POS)">سيستم إدارة المبيعات والكاشير</h3>
+                    <p data-ar="نظام كاشير وإدارة المبيعات الاحترافي"
+                        data-en="Professional POS & sales management system">نظام كاشير وإدارة المبيعات الاحترافي</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i><span data-ar="واجهة كاشير سريعة مع شاشة لمس" data-en="Fast touch-screen cashier interface">واجهة كاشير سريعة مع شاشة لمس</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="تنبيهات نفاد المخزون" data-en="Low stock alerts">تنبيهات نفاد المخزون</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="طباعة فواتير بشعار المحل" data-en="Invoice printing with store logo">طباعة فواتير بشعار المحل</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="تقارير أرباح يومية وشهرية" data-en="Daily & monthly profit reports">تقارير أرباح يومية وشهرية</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="يعمل بدون إنترنت" data-en="Offline functionality">يعمل بدون إنترنت</span></li>
+                    </ul>
+                    <a href="#contact" class="product-cta" id="prod-pos-cta">
+                        <span data-ar="اطلب عرضاً" data-en="Request Demo">اطلب عرضاً</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <!-- Shipping & Delivery System -->
+                <div class="product-card" data-category="logistics" id="prod-shipping">
+                    <div class="product-header">
+                        <div class="product-icon-wrap bg-teal">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="product-badges">
+                            <span class="prod-badge badge-logistics">لوجستيك</span>
+                        </div>
+                    </div>
+                    <h3 data-ar="سيستم إدارة الشحن والتوصيل" data-en="Shipping & Delivery System">سيستم إدارة الشحن والتوصيل</h3>
+                    <p data-ar="إدارة شركات الشحن والتوصيل والتجارة الإلكترونية"
+                        data-en="Shipping & e-commerce delivery management">إدارة شركات الشحن والتوصيل والتجارة الإلكترونية</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i><span data-ar="تتبع حالة الشحنات" data-en="Shipment status tracking">تتبع حالة الشحنات</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="إدارة المناديب والعمولات" data-en="Courier & commission management">إدارة المناديب والعمولات</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="بوابة التجار الإلكترونية" data-en="Merchant portal">بوابة التجار الإلكترونية</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="طباعة البوليصات والباركود" data-en="Waybill & barcode printing">طباعة البوليصات والباركود</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="إشعارات واتساب تلقائية" data-en="Automatic WhatsApp notifications">إشعارات واتساب تلقائية</span></li>
+                    </ul>
+                    <a href="#contact" class="product-cta" id="prod-shipping-cta">
+                        <span data-ar="اطلب عرضاً" data-en="Request Demo">اطلب عرضاً</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <!-- Smart Pharmacy System -->
+                <div class="product-card" data-category="medical" id="prod-pharmacy">
+                    <div class="product-header">
+                        <div class="product-icon-wrap bg-purple">
+                            <i class="fas fa-prescription-bottle-alt"></i>
+                        </div>
+                        <div class="product-badges">
+                            <span class="prod-badge badge-medical">طبي</span>
+                        </div>
+                    </div>
+                    <h3 data-ar="سيستم إدارة الصيدليات الذكي" data-en="Smart Pharmacy System">سيستم إدارة الصيدليات الذكي</h3>
+                    <p data-ar="إدارة الصيدليات بذكاء وكفاءة عالية"
+                        data-en="Smart & efficient pharmacy management">إدارة الصيدليات بذكاء وكفاءة عالية</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i><span data-ar="قاعدة بيانات ضخمة للأدوية" data-en="Massive drug database">قاعدة بيانات ضخمة للأدوية</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="تنبيهات انتهاء الصلاحية" data-en="Expiry date alerts">تنبيهات انتهاء الصلاحية</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="إدارة المبيعات والمشتريات بالباركود" data-en="Barcode-enabled sales & purchases">إدارة المبيعات والمشتريات بالباركود</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="تقارير مالية تفصيلية" data-en="Detailed financial reports">تقارير مالية تفصيلية</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="ربط قواعد بيانات متعددة الفروع" data-en="Multi-branch database linking">ربط قواعد بيانات متعددة الفروع</span></li>
+                    </ul>
+                    <a href="#contact" class="product-cta" id="prod-pharmacy-cta">
+                        <span data-ar="اطلب عرضاً" data-en="Request Demo">اطلب عرضاً</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <!-- Restaurant & Cafe System -->
+                <div class="product-card" data-category="fnb" id="prod-restaurant">
+                    <div class="product-header">
+                        <div class="product-icon-wrap bg-red">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="product-badges">
+                            <span class="prod-badge badge-fnb">مطاعم</span>
+                        </div>
+                    </div>
+                    <h3 data-ar="سيستم إدارة المطاعم والكافيهات الذكي" data-en="Smart Restaurant & Cafe System">سيستم إدارة المطاعم والكافيهات</h3>
+                    <p data-ar="إدارة المطاعم والكافيهات بكل احترافية"
+                        data-en="Professional restaurant & cafe management">إدارة المطاعم والكافيهات بكل احترافية</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i><span data-ar="كاشير سريع (تيك أواي، صالة، توصيل)" data-en="Fast cashier (Takeaway, Dine-in, Delivery)">كاشير سريع (تيك أواي، صالة، توصيل)</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="Captain App للطلب من الطاولات" data-en="Captain App for table ordering">Captain App للطلب من الطاولات</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="شاشة عرض المطبخ KDS" data-en="Kitchen Display System KDS">شاشة عرض المطبخ KDS</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="إدارة حالة الطاولات" data-en="Table status management">إدارة حالة الطاولات</span></li>
+                        <li><i class="fas fa-check"></i><span data-ar="تقارير الأرباح والمصروفات" data-en="Profit & expense reports">تقارير الأرباح والمصروفات</span></li>
+                    </ul>
+                    <a href="#contact" class="product-cta" id="prod-restaurant-cta">
+                        <span data-ar="اطلب عرضاً" data-en="Request Demo">اطلب عرضاً</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-ar="أعمالنا" data-en="Our Work">أعمالنا</span>
+                <h2 class="section-title" data-ar="مشاريع نفخر بها" data-en="Projects We're Proud Of">مشاريع نفخر بها</h2>
+                <p class="section-subtitle"
+                    data-ar="نماذج من أعمالنا المنجزة التي تعكس جودتنا وابتكارنا"
+                    data-en="Samples from our completed work reflecting our quality and innovation">
+                    نماذج من أعمالنا المنجزة التي تعكس جودتنا وابتكارنا
+                </p>
+            </div>
+            <div class="projects-grid">
+                <!-- Construct ERP -->
+                <div class="project-card" id="proj-construct">
+                    <div class="project-img-wrap">
+                        <img src="projecst_UI/Const_ERP.png" alt="Construct ERP Pro" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-logo-small">
+                                <img src="Products/Const_logo.png" alt="Construct ERP Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type-badge" data-ar="نظام ERP" data-en="ERP System">نظام ERP</div>
+                        <h3 data-ar="Construct ERP Pro" data-en="Construct ERP Pro">Construct ERP Pro</h3>
+                        <p data-ar="نظام ERP متكامل لإدارة شركات المقاولات - الموظفين، المالية، المشاريع، والمخزون"
+                            data-en="Complete ERP for construction companies - employees, finance, projects & inventory">
+                            نظام ERP متكامل لإدارة شركات المقاولات - الموظفين، المالية، المشاريع، والمخزون
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Flutter</span>
+                            <span>SQLite</span>
+                            <span>PDF</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PowerCash App -->
+                <div class="project-card" id="proj-powercash">
+                    <div class="project-img-wrap">
+                        <img src="projecst_UI/powercash_app.png" alt="PowerCash App" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-logo-small">
+                                <img src="Products/Electric_shop (1).png" alt="PowerCash Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type-badge" data-ar="نظام POS" data-en="POS System">نظام POS</div>
+                        <h3 data-ar="باور كاش - POS" data-en="PowerCash - POS">باور كاش - POS</h3>
+                        <p data-ar="نظام كاشير ومبيعات احترافي للمحلات التجارية مع دعم الباركود والتقارير المتقدمة"
+                            data-en="Professional cashier & sales system for retail shops with barcode support and advanced reports">
+                            نظام كاشير ومبيعات احترافي للمحلات التجارية مع دعم الباركود والتقارير المتقدمة
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Flutter</span>
+                            <span>Barcode</span>
+                            <span>Reports</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TRP CRM -->
+                <div class="project-card" id="proj-trpcrm">
+                    <div class="project-img-wrap">
+                        <img src="projecst_UI/TRP_CRM.png" alt="TRP CRM System" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-logo-small">
+                                <img src="Products/transport_management (3).png" alt="TRP Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type-badge" data-ar="نظام CRM" data-en="CRM System">نظام CRM</div>
+                        <h3 data-ar="Transportation CRM - إدارة المسافرين" data-en="Transportation CRM - Travel Management">Transportation CRM - إدارة المسافرين</h3>
+                        <p data-ar="نظام CRM متكامل لإدارة الحجوزات والمسافرين والعمليات اللوجستية لشركات السفر"
+                            data-en="Complete CRM for booking, passenger, and logistics management for travel companies">
+                            نظام CRM متكامل لإدارة الحجوزات والمسافرين والعمليات اللوجستية لشركات السفر
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Flutter</span>
+                            <span>CRM</span>
+                            <span>Logistics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-ar="لماذا تختارنا" data-en="Why Choose Us">لماذا تختارنا</span>
+                <h2 class="section-title" data-ar="ما يميزنا عن غيرنا" data-en="What Sets Us Apart">ما يميزنا عن غيرنا</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card" id="why-performance">
+                    <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 data-ar="أداء فائق السرعة" data-en="Ultra-Fast Performance">أداء فائق السرعة</h3>
+                    <p data-ar="مبني بتقنية Flutter لأداء أصلي يضاهي التطبيقات المكتوبة بلغات النظام الأم"
+                        data-en="Built with Flutter for native-level performance rivaling system-native applications">
+                        مبني بتقنية Flutter لأداء أصلي يضاهي التطبيقات المكتوبة بلغات النظام الأم
+                    </p>
+                </div>
+                <div class="why-card" id="why-design">
+                    <div class="why-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 data-ar="تصميم احترافي" data-en="Professional Design">تصميم احترافي</h3>
+                    <p data-ar="واجهة مستخدم عصرية وأنيقة مصممة بعناية فائقة لتجربة مستخدم لا مثيل لها"
+                        data-en="Modern, elegant UI designed with exceptional care for an unparalleled user experience">
+                        واجهة مستخدم عصرية وأنيقة مصممة بعناية فائقة لتجربة مستخدم لا مثيل لها
+                    </p>
+                </div>
+                <div class="why-card" id="why-scalable">
+                    <div class="why-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                    <h3 data-ar="قابل للتوسع" data-en="Scalable">قابل للتوسع</h3>
+                    <p data-ar="بنية برمجية نظيفة تسمح بإضافة ميزات ووحدات جديدة بسهولة حسب نمو أعمالك"
+                        data-en="Clean architecture allowing easy addition of features as your business grows">
+                        بنية برمجية نظيفة تسمح بإضافة ميزات ووحدات جديدة بسهولة حسب نمو أعمالك
+                    </p>
+                </div>
+                <div class="why-card" id="why-support">
+                    <div class="why-icon"><i class="fas fa-headset"></i></div>
+                    <h3 data-ar="دعم فني مستمر" data-en="Continuous Support">دعم فني مستمر</h3>
+                    <p data-ar="فريق دعم فني متخصص جاهز لمساعدتك في أي وقت مع تحديثات مستمرة للنظام"
+                        data-en="Dedicated support team ready to assist anytime with continuous system updates">
+                        فريق دعم فني متخصص جاهز لمساعدتك في أي وقت مع تحديثات مستمرة للنظام
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-ar="التقنيات المستخدمة" data-en="Technology Stack">التقنيات المستخدمة</span>
+                <h2 class="section-title" data-ar="مبني بأحدث التقنيات" data-en="Built with Cutting-Edge Tech">مبني بأحدث التقنيات</h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item" id="tech-flutter">
+                    <i class="fas fa-mobile-alt" style="color: #02569B;"></i>
+                    <span>Flutter</span>
+                </div>
+                <div class="tech-item" id="tech-dart">
+                    <i class="fas fa-code" style="color: #0175C2;"></i>
+                    <span>Dart</span>
+                </div>
+                <div class="tech-item" id="tech-sqlite">
+                    <i class="fas fa-database" style="color: #003B57;"></i>
+                    <span>SQLite</span>
+                </div>
+                <div class="tech-item" id="tech-bloc">
+                    <i class="fas fa-layer-group" style="color: #6C63FF;"></i>
+                    <span>BLoC Pattern</span>
+                </div>
+                <div class="tech-item" id="tech-clean">
+                    <i class="fas fa-sitemap" style="color: #FF6B6B;"></i>
+                    <span>Clean Architecture</span>
+                </div>
+                <div class="tech-item" id="tech-pdf">
+                    <i class="fas fa-file-pdf" style="color: #E74C3C;"></i>
+                    <span>PDF Engine</span>
+                </div>
+                <div class="tech-item" id="tech-figma">
+                    <i class="fas fa-paint-brush" style="color: #F24E1E;"></i>
+                    <span>Figma</span>
+                </div>
+                <div class="tech-item" id="tech-whatsapp">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                    <span>WhatsApp API</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients-section" id="clients">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-ar="ثقتهم تشرفنا" data-en="They Trust Us">ثقتهم تشرفنا</span>
+                <h2 class="section-title" data-ar="عملاؤنا الكرام" data-en="Our Valued Clients">عملاؤنا الكرام</h2>
+                <p class="section-subtitle"
+                    data-ar="شركات ومؤسسات وثقت في حلولنا التقنية"
+                    data-en="Companies and organizations that trusted our tech solutions">
+                    شركات ومؤسسات وثقت في حلولنا التقنية
+                </p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-card" id="client-amg">
+                    <img src="clients/Without background.png" alt="AMG Group" class="client-logo">
+                    <span class="client-name">AMG Group</span>
+                </div>
+                <div class="client-card" id="client-organi">
+                    <img src="clients/organi_Logo_without_BG.png" alt="Organi Group" class="client-logo">
+                    <span class="client-name">Organi Group</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-icon-big">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2 data-ar="هل أنت مستعد لتطوير أعمالك؟" data-en="Ready to Elevate Your Business?">هل أنت مستعد لتطوير أعمالك؟</h2>
+                <p data-ar="تواصل معنا اليوم واحصل على استشارة مجانية. دعنا نبني معاً الحل المثالي الذي يحتاجه عملك."
+                    data-en="Contact us today for a free consultation. Let us build together the perfect solution your business needs.">
+                    تواصل معنا اليوم واحصل على استشارة مجانية. دعنا نبني معاً الحل المثالي الذي يحتاجه عملك.
+                </p>
+                <div class="contact-info-row">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-ar="شارع الفاتح، شارع البحر - طنطا، مصر" data-en="El Fateh St., El Bahr St. - Tanta, Egypt">شارع الفاتح، شارع البحر - طنطا، مصر</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>01012566135</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/201012566135" class="btn btn-whatsapp" target="_blank" id="cta-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-ar="تواصل عبر واتساب" data-en="Contact via WhatsApp">تواصل عبر واتساب</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61570796722286" class="btn btn-facebook"
+                        target="_blank" id="cta-facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span data-ar="صفحتنا على فيسبوك" data-en="Our Facebook Page">صفحتنا على فيسبوك</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="NexGen_logo_without_BG.png" alt="NexGen Systems" class="footer-logo">
+                </div>
+                <div class="footer-links">
+                    <a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                    <a href="#products" data-ar="المنتجات" data-en="Products">المنتجات</a>
+                    <a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+                    <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=61570796722286" target="_blank" class="social-icon" id="footer-facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/201012566135" target="_blank" class="social-icon" id="footer-whatsapp" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-ar="© 2026 NexGen Systems. جميع الحقوق محفوظة."
+                    data-en="© 2026 NexGen Systems. All Rights Reserved.">
+                    © 2026 NexGen Systems. جميع الحقوق محفوظة.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
