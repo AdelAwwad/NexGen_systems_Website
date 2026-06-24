@@ -36,7 +36,7 @@
 /* ── Reset & Base ──────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 18px; }
 
 body {
     background: var(--bg-deep);
@@ -76,7 +76,7 @@ button { cursor: pointer; border: none; background: none; }
 }
 
 /* ── Container & Section Layout ───────────────────────────── */
-.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.container { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
 
 section { position: relative; z-index: 1; padding: 100px 0; }
 
@@ -200,12 +200,13 @@ section { position: relative; z-index: 1; padding: 100px 0; }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
-.logo-img { height: 50px; width: auto; object-fit: contain; }
+.logo-img { height: 75px; width: auto; object-fit: contain; transition: var(--transition); }
+.navbar.scrolled .logo-img { height: 55px; }
 
 .nav-links {
     display: flex;
@@ -372,16 +373,16 @@ section { position: relative; z-index: 1; padding: 100px 0; }
 .hero-visual { display: flex; justify-content: center; align-items: center; }
 .hero-logo-wrapper {
     position: relative;
-    width: 380px;
-    height: 380px;
+    width: 460px;
+    height: 460px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hero-logo-big {
-    width: 260px;
-    height: 260px;
+    width: 320px;
+    height: 320px;
     object-fit: contain;
     filter: drop-shadow(0 0 40px rgba(0,198,255,0.5));
     animation: heroLogoFloat 6s ease-in-out infinite;
